@@ -23,6 +23,8 @@ You will need the GIST source code to extract the image features on your own. I 
 features can be downloaed at the following link
 https://drive.google.com/drive/folders/1BGHB7GRmNMTtvSvgyNQso4uFb2VeO5sY
 
+You can download the original MNIST dataset from http://yann.lecun.com/exdb/mnist/
+
 Once you have the dataset correctly downloaded, ensure you have the correct paths to the dataset.
 
 The code runs on original MNIST dataset and then follows on gist features of the mnist dataet.
