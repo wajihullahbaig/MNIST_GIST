@@ -31,12 +31,12 @@ The code runs on original MNIST dataset and then follows on gist features of the
 ## Results
 The following table reports the accuracy achieved using different methods. The code also shows confusion matrices,Precision,Recall and F1 Scores apart from accuracies.
 
-       | MNIST RAW Features  | MNIST GIST Features |
-       | ------------------- | ------------- |
-XGBOOST| 0.96                | 0.97          |
-LDA    | 0.87                | 0.97          |
-QDA    | 0.53                | 0.96          |
-ANN    | 0.97                | 0.98          |
+      | Method  | MNIST RAW Features  | MNIST GIST Features |
+      | ------------------- ----------| ------------------- |
+      | XGBOOST | 0.96                | 0.97                |
+      | LDA     | 0.87                | 0.97                |
+      | QDA     | 0.53                | 0.96                |
+      | ANN     | 0.97                | 0.98                |
 
 ## Conclusion
 On comparing the two features, its interesting to note that MNSIT images have 784 features while gist features stand at 224 features
