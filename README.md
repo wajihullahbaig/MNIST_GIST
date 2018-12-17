@@ -1,5 +1,5 @@
 # MNIST_GIST
-## Experimenting with GIST feartures of MNIST dataset using XGBOOST and Neural Networks
+## Experimenting with GIST feartures of MNIST dataset using XGBOOST,LDA,QDA and Neural Networks
 
 This is a python code repo that experiments with the image descriptor GIST on MNIST dataset for classification.
 This descriptors has the ability to wholisttically capture image information that can be useful for classification. 
@@ -12,7 +12,7 @@ three scales. In Matlab you can set the scales and image size as I did as follow
 
 ## GIST parameters
 param.imageSize = [28 28]; % it works also with non-square images
-param.orientationsPerScale = [8 4 2];
+param.orientationsPerScale = [8 4 2]; % Three scales
 param.numberBlocks = 4;
 param.fc_prefilt = 4;
 
@@ -29,10 +29,15 @@ Once you have the dataset correctly downloaded, ensure you have the correct path
 
 The code runs on original MNIST dataset and then follows on gist features of the mnist dataet.
 ## Results
-You can see that accuracy of classifcation using XGBOOST, both on MNIST (0.9612) and MNIST_GISTS (0.9748) with same parameters.
-Likewise using a ANN, we have 0.97 and  0.98 Accuracy.
+The following table reports the accuracy achieved using different methods. The code also shows confusion matrices,Precision,Recall and F1 Scores apart from accuracies.
+       | MNIST RAW Features  | MNIST GIST Features |
+       | ------------------- | ------------- |
+XGBOOST| 0.96                | 0.97          |
+LDA    | 0.87                | 0.97          |
+QDA    | 0.53                | 0.96          |
+ANN    | 0.97                | 0.98          |
 
 ## Conclusion
 On comparing the two features, its interesting to note that MNSIT images have 784 features while gist features stand at 224 features
 per image. This very useful in terms of machine learning where reduction of features and increase in accuracy is a highly lucrative 
-aspect. In both tests using XGBOOST and ANN, we can safely conclude that GIST features are outperforming raw image features.
+aspect. In each test we can see that the accuracy for GIST features turns out to be higher. This is highly related to the way GIST descriptor worrks. It look at the whole image to extract features instead of just localized information on multiple scales.
