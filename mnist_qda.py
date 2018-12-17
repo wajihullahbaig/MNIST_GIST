@@ -12,7 +12,7 @@ import numpy as np
 from timeit import default_timer as timer
 from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis
 from sklearn.metrics import classification_report,confusion_matrix,accuracy_score
-inputData = scipy.io.loadmat('/media/wajih/Disk1 500 GB/Onus/RnD/DataSet/handwritten/mnist/mnist_uint8')
+inputData = scipy.io.loadmat('/data/mnist_uint8')
 if inputData is not None:
     keys = inputData.keys()
     for key in keys:
@@ -55,8 +55,8 @@ plt.figure(figsize=(10,10))
 sns.heatmap(confusion_matrix(test_Y[0:nSamplesTest],predictions),annot=True,fmt = "d",linecolor="k",linewidths=3)
 plt.show()
 
-test_x_gist = scipy.io.loadmat('//media/wajih/Disk1 500 GB/Onus/RnD/Codes/gistdescriptor/mnist_gists/test_x_gist')
-train_x_gist = scipy.io.loadmat('//media/wajih/Disk1 500 GB/Onus/RnD/Codes/gistdescriptor/mnist_gists/train_x_gist')
+test_x_gist = scipy.io.loadmat('/mnist_gists/test_x_gist')
+train_x_gist = scipy.io.loadmat('/mnist_gists/train_x_gist')
 
 del Model
 Model = QuadraticDiscriminantAnalysis()
