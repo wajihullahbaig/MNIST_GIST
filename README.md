@@ -30,6 +30,7 @@ Once you have the dataset correctly downloaded, ensure you have the correct path
 The code runs on original MNIST dataset and then follows on gist features of the mnist dataet.
 ## Results
 The following table reports the accuracy achieved using different methods. The code also shows confusion matrices,Precision,Recall and F1 Scores apart from accuracies.
+
        | MNIST RAW Features  | MNIST GIST Features |
        | ------------------- | ------------- |
 XGBOOST| 0.96                | 0.97          |
