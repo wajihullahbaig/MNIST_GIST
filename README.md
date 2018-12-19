@@ -37,6 +37,11 @@ The following table reports the accuracy achieved using different methods. The c
       | LDA     | 0.87                | 0.97                |
       | QDA     | 0.53                | 0.96                |
       | ANN     | 0.97                | 0.98                |
+## Data Visualization
+To ensure the we really have the GIST features as outperformers, a visualization of a small subset has been done. 
+It can be clearly seen that TSNE shows the images to be clustered into more separable groups
+
+[[https://github.com/username/repository/blob/master/images/ISOMAP%20%GIST%RAW.png|alt=isomap gist raw]]
 
 ## Conclusion
 On comparing the two features, its interesting to note that MNSIT images have 784 features while gist features stand at 224 features
