@@ -13,7 +13,7 @@ import scipy.io
 import numpy as np
 
 
-inputData = scipy.io.loadmat('/media/wajih/Disk1 500 GB/Onus/RnD/DataSet/handwritten/mnist/mnist_uint8')
+inputData = scipy.io.loadmat('/data/mnist_uint8')
 if inputData is not None:
     keys = inputData.keys()
     for key in keys:
@@ -62,9 +62,8 @@ plt.colorbar(ticks=range(10))
 plt.clim(-0.5, 9.5);
 plt.show()
 
-test_x_gist = scipy.io.loadmat('//media/wajih/Disk1 500 GB/Onus/RnD/Codes/gistdescriptor/mnist_gists/test_x_gist')
-train_x_gist = scipy.io.loadmat('//media/wajih/Disk1 500 GB/Onus/RnD/Codes/gistdescriptor/mnist_gists/train_x_gist')
-
+test_x_gist = scipy.io.loadmat('/mnist_gists/test_x_gist')
+train_x_gist = scipy.io.loadmat('/mnist_gists/train_x_gist')
 
 keys = train_x_gist.keys()
 for key in keys:
