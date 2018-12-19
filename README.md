@@ -41,7 +41,7 @@ The following table reports the accuracy achieved using different methods. The c
 To ensure the we really have the GIST features as outperformers, a visualization of a small subset has been done. 
 It can be clearly seen that TSNE shows the images to be clustered into more separable groups
 
-![alt tag](https://github.com/wajihullahbaig/VGGFaceMatching/blob/master/images/ISOMAP%20MNIST%20.png)
+![alt tag](https://github.com/wajihullahbaig/VGGFaceMatching/blob/master/images/ISOMAP%20MNIST%20RAW.png)
 
 ## Conclusion
 On comparing the two features, its interesting to note that MNSIT images have 784 features while gist features stand at 224 features
