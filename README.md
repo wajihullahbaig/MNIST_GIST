@@ -42,6 +42,9 @@ To ensure the we really have the GIST features as outperformers, a visualization
 It can be clearly seen that TSNE shows the images to be clustered into more separable groups
 
 ![alt tag](https://github.com/wajihullahbaig/MNIST_GIST/blob/master/images/ISOMAP%20MNIST%20RAW.png)
+![alt tag](https://github.com/wajihullahbaig/MNIST_GIST/blob/master/images/TSNE%20MNIST%20RAW.png)
+![alt tag](https://github.com/wajihullahbaig/MNIST_GIST/blob/master/images/ISOMAP%20MNIST%20GIST.png)
+![alt tag](https://github.com/wajihullahbaig/MNIST_GIST/blob/master/images/TSNE%20MNIST%20GIST.png)
 
 ## Conclusion
 On comparing the two features, its interesting to note that MNSIT images have 784 features while gist features stand at 224 features
