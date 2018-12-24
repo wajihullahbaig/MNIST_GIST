@@ -117,7 +117,7 @@ class ANNModel(nn.Module):
 
 # instantiate ANN
 input_dim = 784 
-hidden_dim = 99 #hidden layer dim is one of the hyper parameter and it should be chosen and tuned. For now I only say 150 there is no reason.
+hidden_dim = 100 #hidden layer dim is one of the hyper parameter and it should be chosen and tuned. 
 output_dim = 10
 
 # Create ANN
