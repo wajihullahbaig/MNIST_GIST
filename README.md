@@ -1,5 +1,5 @@
 # MNIST_GIST
-## Experimenting with GIST feartures of MNIST dataset using XGBOOST,LDA,QDA and Neural Networks
+## Experimenting with GIST feartures of MNIST dataset using XGBOOST,LDA,QDA and Neural Networks (PyTorch)
 
 This is a python code repo that experiments with the image descriptor GIST on MNIST dataset for classification.
 This descriptors has the ability to wholisttically capture image information that can be useful for classification. 
