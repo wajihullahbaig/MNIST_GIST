@@ -2,7 +2,7 @@
 ## Experimenting with GIST feartures of MNIST dataset using XGBOOST,LDA,QDA and Neural Networks (PyTorch)
 
 This is a python code repo that experiments with the image descriptor GIST on MNIST dataset for classification.
-This descriptors has the ability to wholisttically capture image information that can be useful for classification. 
+This descriptor has the ability to holistically capture image information that can be useful for classification. 
 Originally written by Torallaba in 2001, the source code for MATLAB Gist can be found [here](http://people.csail.mit.edu/torralba/code/spatialenvelope/) a python implementation [here](https://pypi.org/project/pyleargist/)
 
 Please note that I did not try the python version.
